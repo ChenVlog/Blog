@@ -38,6 +38,6 @@ weight = 10
 [[menu.main]]
 identifier = "bb"
 name = "Memos"
-url = "https://me.chenplus.com/"
+url = "/bb/"
 weight = 10
 
