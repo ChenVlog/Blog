@@ -756,7 +756,7 @@ body {
   color: inherit;
 }
 
-.prose :where(img):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+.prose  section :where(img):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
   margin-top: 2em;
   margin-bottom: 2em;
 }
@@ -1929,7 +1929,4 @@ article .highlight > div table tr td:last-of-type {
 
 :is(:where(.dark) .dark\:hover\:bg-white\/\[3\%\]:hover) {
   background-color: rgb(255 255 255 / 3%);
-}
-.tk-avatar-img, .user-now-avatar {
-  margin: unset;
 }
