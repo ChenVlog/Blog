@@ -7,9 +7,9 @@ featured: false
 draft: false
 tags:
   - blog
-  - astro
+  - hugo
 description: 你好世界，愿这里成为你的一片净土。
 ---
 
 
-欢迎使用Astro，这是您的第一篇文章。编辑或删除它，然后开始写作吧！
+欢迎使用hugo，这是您的第一篇文章。编辑或删除它，然后开始写作吧！

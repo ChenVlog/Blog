@@ -1,7 +1,7 @@
 export const SITE = {
-  website: "https://astro-paper.pages.dev/", // replace this with your deployed domain
+  website: "https://chenvlog.com/", // replace this with your deployed domain
   author: "ChenVlog",
-  profile: "https://satnaing.dev/",
+  profile: "https://chenvlog.pages.dev/",
   desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
   title: "老陳网志",
   ogImage: "astropaper-og.jpg",
@@ -14,7 +14,7 @@ export const SITE = {
   editPost: {
     enabled: false,
     text: "Suggest Changes",
-    url: "https://github.com/satnaing/astro-paper/edit/main/",
+    url: "https://github.com/ChenVlog/Blog/edit/main/",
   },
   dynamicOgImage: true,
   lang: "en", // html lang code. Set this empty and default will be "en"
