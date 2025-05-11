@@ -1,0 +1,46 @@
+ <!-- Artalk -->
+ <div style="padding:20px 0"></div>
+ <div id="Comments">
+  <div class="C-comments"></div>
+</div>
+
+<script>
+  import "artalk/dist/Artalk.css";
+  import Artalk from "artalk";
+
+  const commentinfo = {
+    type: "artalk",
+    name: "老陳网志",
+    server: "https://artalk.chenyyds.com",
+    el: ".C-comments",
+  };
+
+  document.addEventListener("astro:page-load", () => {
+    if (!document.querySelector(commentinfo.el)) return;
+    const artalk = Artalk.init({
+      el: commentinfo.el, // 绑定元素的 Selector
+      server: commentinfo.server, // 后端地址
+      site: commentinfo.name, // 你的站点名
+      pageKey: document.location.pathname,
+    });
+
+    // 夜间模式
+    (() => {
+      // 检查是否是夜间模式
+      const darkMode =
+        document.documentElement.getAttribute("data-theme") === "dark";
+      artalk.setDarkMode(darkMode);
+
+      // 监听 `data-theme` 属性变化
+      new MutationObserver(mList => {
+        mList.forEach(m => {
+          if (m.attributeName !== "data-theme") return;
+
+          const isDarkMode =
+            document.documentElement.getAttribute("data-theme") === "dark";
+          artalk.setDarkMode(isDarkMode);
+        });
+      }).observe(document.documentElement, { attributes: true });
+    })();
+  });
+</script>
