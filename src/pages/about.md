@@ -26,6 +26,7 @@ Email:`chenvlog#outlook.com` (#换成@) - QQ/Wechat:`3337123`(同号)
 - [清水无鱼](https://bosir.cn/)
 - [大峰笔记](https://illl.xyz/)
 - [叶开博客](https://qq.md/)
+- [子舒的博客](https://zishu.me/)
 - [木木木木木](https://immmmm.com/)
 - [生活的左上角](https://bwskyer.com)
 
